@@ -1,298 +1,591 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>ErectogenX - Vitalidade e Energia Masculina</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ErectoGenX — Advanced ED Support</title>
+
+    <!-- TikTok Pixel Code Start -->
+    <script>
+        !function (w, d, t) {
+            w.TiktokAnalyticsObject = t; var ttq = w[t] = w[t] || []; ttq.methods = ["page", "track", "identify", "instances", "debug", "on", "off", "once", "ready", "alias", "group", "enableCookie", "disableCookie", "holdConsent", "revokeConsent", "grantConsent"], ttq.setAndDefer = function (t, e) { t[e] = function () { t.push([e].concat(Array.prototype.slice.call(arguments, 0))) } }; for (var i = 0; i < ttq.methods.length; i++)ttq.setAndDefer(ttq, ttq.methods[i]); ttq.instance = function (t) {
+                for (
+                    var e = ttq._i[t] || [], n = 0; n < ttq.methods.length; n++)ttq.setAndDefer(e, ttq.methods[n]); return e
+            }, ttq.load = function (e, n) {
+                var r = "https://analytics.tiktok.com/i18n/pixel/events.js", o = n && n.partner; ttq._i = ttq._i || {}, ttq._i[e] = [], ttq._i[e]._u = r, ttq._t = ttq._t || {}, ttq._t[e] = +new Date, ttq._o = ttq._o || {}, ttq._o[e] = n || {}; n = document.createElement("script")
+                    ; n.type = "text/javascript", n.async = !0, n.src = r + "?sdkid=" + e + "&lib=" + t; e = document.getElementsByTagName("script")[0]; e.parentNode.insertBefore(n, e)
+            };
+
+
+            ttq.load('D47BSGRC77U6M9K6Q0NG');
+            ttq.page();
+        }(window, document, 'ttq');
+    </script>
+    <!-- TikTok Pixel Code End -->
+
     <style>
-        * {
-            box-sizing: border-box;
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f5f6f8;
+            color: #232D3D;
             margin: 0;
             padding: 0;
-            font-family: Arial, sans-serif;
-        }
-
-        body {
-            background: #f5f5f5;
-            color: #222;
-            line-height: 1.6;
-        }
-
-        .page {
-            max-width: 1000px;
-            margin: 0 auto;
-            background: #ffffff;
-            padding: 20px 15px 40px;
-        }
-
-        header {
             text-align: center;
-            padding: 20px 10px 10px;
-            border-bottom: 1px solid #eee;
         }
 
-        header h1 {
-            font-size: 28px;
-            margin-bottom: 10px;
-        }
-
-        header h2 {
-            font-size: 18px;
-            color: #555;
-        }
-
-        .highlight {
-            background: #f0f8ff;
-            border-left: 4px solid #0066cc;
-            padding: 15px;
-            margin: 20px 0;
-        }
-
-        section {
-            margin: 25px 0;
-        }
-
-        h3 {
-            font-size: 20px;
-            margin-bottom: 10px;
-        }
-
-        ul {
-            margin: 10px 0 0 20px;
-        }
-
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-            gap: 20px;
-        }
-
-        .card {
-            border: 1px solid #eee;
-            border-radius: 6px;
-            padding: 15px;
-            background: #fafafa;
-        }
-
-        .cta-box {
-            text-align: center;
-            padding: 20px 15px;
-            border-radius: 8px;
-            background: #f0f8ff;
-            margin-top: 10px;
-        }
-
-        .cta-button {
-            display: inline-block;
-            margin-top: 12px;
-            padding: 12px 24px;
-            background: #0066cc;
+        .headline {
+            background-color: #232D3D;
             color: #ffffff;
-            text-decoration: none;
-            border-radius: 4px;
+            padding: 40px 20px;
+            font-size: 26px;
             font-weight: bold;
+            line-height: 1.4;
         }
 
-        .cta-button:hover {
-            opacity: 0.9;
+        .video-section {
+            margin: 40px auto 20px auto;
+            max-width: 800px;
+            width: 90%;
         }
 
-        .disclaimer {
-            font-size: 12px;
-            color: #777;
-            margin-top: 20px;
+        /* SEÇÃO DE CARDS DE OFERTAS */
+        .bb-section {
+            background: radial-gradient(circle at top, #1f2937 0, #020617 60%);
+            color: #f9fafb;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            padding: 40px 16px 60px;
         }
 
-        .badge-list {
+        /* Steps */
+        .bb-steps {
             display: flex;
-            flex-wrap: wrap;
+            justify-content: center;
             gap: 8px;
-            margin-top: 10px;
+            margin-bottom: 24px;
         }
 
-        .badge {
+        .bb-step {
+            border-radius: 999px;
+            border: 1px solid #4b5563;
+            padding: 6px 18px;
             font-size: 12px;
-            padding: 6px 10px;
-            border-radius: 20px;
-            border: 1px solid #ddd;
-            background: #fff;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: #e5e7eb;
         }
 
-        .testimonial {
-            font-size: 14px;
-            font-style: italic;
-            margin-bottom: 8px;
+        .bb-step--active {
+            background: linear-gradient(135deg, #1d4ed8, #0ea5e9);
+            border-color: transparent;
+            color: #f9fafb;
         }
 
-        .testimonial span {
-            display: block;
-            font-style: normal;
-            font-weight: bold;
-            margin-top: 4px;
+        /* Título */
+        .bb-section-header {
+            text-align: center;
+            margin-bottom: 28px;
+        }
+
+        .bb-section-header h3 {
+            font-size: 20px;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+
+        .bb-divider {
+            width: 80px;
+            height: 3px;
+            margin: 12px auto 0;
+            border-radius: 999px;
+            background: linear-gradient(90deg, #0ea5e9, #22c55e);
+        }
+
+        /* Cards */
+        .bb-packages {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 20px;
+            max-width: 1100px;
+            margin: 0 auto 40px;
+        }
+
+        @media (max-width: 968px) {
+            .bb-packages {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .bb-card {
+            background: radial-gradient(circle at top, #020617 0, #020617 40%, #020617 100%);
+            border-radius: 16px;
+            border: 1px solid #111827;
+            box-shadow: 0 18px 40px rgba(0, 0, 0, 0.55);
+            padding: 16px 18px 20px;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .bb-card--best {
+            border: 1px solid #22c55e;
+            box-shadow: 0 0 0 1px rgba(34, 197, 94, 0.4), 0 18px 50px rgba(0, 0, 0, 0.7);
+            transform: translateY(-4px);
+        }
+
+        .bb-card-tag {
+            position: absolute;
+            top: -14px;
+            left: 16px;
+            background: linear-gradient(135deg, #22c55e, #a3e635);
+            color: #022c22;
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            padding: 4px 12px;
+            border-radius: 999px;
+        }
+
+        /* Conteúdo interno */
+        .bb-card-body {
+            display: grid;
+            grid-template-columns: 1.1fr 1.2fr;
+            gap: 14px;
+            align-items: center;
         }
 
         @media (max-width: 600px) {
-            header h1 {
-                font-size: 22px;
+            .bb-card-body {
+                grid-template-columns: 1fr;
+                text-align: center;
             }
-            header h2 {
-                font-size: 16px;
+        }
+
+        .bb-card-left h4 {
+            font-size: 18px;
+            font-weight: 700;
+        }
+
+        .bb-supply {
+            font-size: 13px;
+            color: #9ca3af;
+            margin-bottom: 8px;
+        }
+
+        .bb-product-img {
+            max-width: 140px;
+            width: 100%;
+        }
+
+        /* Preços */
+        .bb-price-per-bottle {
+            display: flex;
+            align-items: baseline;
+            gap: 6px;
+            justify-content: flex-start;
+        }
+
+        .bb-price {
+            font-size: 32px;
+            font-weight: 800;
+            color: #f9fafb;
+        }
+
+        .bb-price-label {
+            font-size: 12px;
+            text-transform: uppercase;
+            color: #9ca3af;
+            line-height: 1.2;
+        }
+
+        .bb-save {
+            font-size: 12px;
+            text-transform: uppercase;
+            color: #22c55e;
+            font-weight: 600;
+            margin-top: 4px;
+        }
+
+        .bb-save--highlight {
+            color: #22c55e;
+        }
+
+        .bb-label {
+            font-size: 11px;
+            text-transform: uppercase;
+            color: #e5e7eb;
+            margin-top: 4px;
+        }
+
+        .bb-label--accent {
+            color: #0ea5e9;
+        }
+
+        .bb-cards-img {
+            max-width: 140px;
+            margin: 10px 0;
+        }
+
+        .bb-total {
+            font-size: 13px;
+            margin-top: 4px;
+        }
+
+        .bb-total-old {
+            text-decoration: line-through;
+            color: #ef4444;
+            margin-left: 4px;
+            margin-right: 6px;
+        }
+
+        .bb-total-new {
+            color: #22c55e;
+            font-weight: 700;
+        }
+
+        .bb-shipping {
+            font-size: 12px;
+            color: #9ca3af;
+            margin-top: 4px;
+        }
+
+        .bb-shipping--free {
+            color: #22c55e;
+            font-weight: 600;
+        }
+
+        /* Botões */
+        .bb-btn {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+            margin-top: 8px;
+            padding: 10px 18px;
+            border-radius: 999px;
+            border: 0;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            background: linear-gradient(135deg, #1e40af, #0ea5e9);
+            color: #f9fafb;
+            box-shadow: 0 10px 25px rgba(15, 23, 42, 0.9);
+            transition: transform 0.15s ease, box-shadow 0.15s ease, filter 0.15s ease;
+        }
+
+        .bb-btn--primary {
+            background: linear-gradient(135deg, #22c55e, #0ea5e9);
+        }
+
+        .bb-btn:hover {
+            transform: translateY(-1px);
+            filter: brightness(1.05);
+            box-shadow: 0 16px 35px rgba(15, 23, 42, 1);
+        }
+
+        /* Garantia */
+        .bb-guarantee {
+            max-width: 1100px;
+            margin: 32px auto 0;
+            padding: 20px 18px;
+            border-radius: 16px;
+            border: 1px solid #1f2937;
+            background: radial-gradient(circle at left, #020617 0, #020617 60%);
+            display: grid;
+            grid-template-columns: 0.9fr 2fr;
+            gap: 16px;
+            align-items: center;
+        }
+
+        @media (max-width: 768px) {
+            .bb-guarantee {
+                grid-template-columns: 1fr;
+                text-align: center;
             }
+        }
+
+        .bb-guarantee-img {
+            max-width: 260px;
+            width: 100%;
+        }
+
+        .bb-guarantee-text h3 {
+            font-size: 18px;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 6px;
+        }
+
+        .bb-guarantee-text p {
+            font-size: 14px;
+            color: #d1d5db;
+        }
+
+        .comments-section {
+            background: #fff;
+            border-top: 3px solid #E60013;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            text-align: left;
+            border-radius: 6px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+        }
+
+        .comments-section h3 {
+            color: #232D3D;
+            margin-bottom: 25px;
+        }
+
+        .fb-comment {
+            display: flex;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 15px;
+        }
+
+        .fb-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 15px;
+        }
+
+        .fb-name {
+            font-weight: bold;
+            color: #232D3D;
+        }
+
+        .fb-text {
+            margin: 5px 0;
+            line-height: 1.4;
+        }
+
+        .fb-actions {
+            font-size: 13px;
+            color: #65676b;
+        }
+
+        .fb-actions span {
+            margin-right: 10px;
+            cursor: pointer;
+        }
+
+        .fb-actions span:hover {
+            color: #E60013;
         }
     </style>
 </head>
+
 <body>
-<div class="page">
-    <header>
-        <h1>ErectogenX</h1>
-        <h2>Suporte diário para vitalidade, energia e bem-estar masculino</h2>
 
-        <div class="badge-list">
-            <div class="badge">Fórmula com ingredientes naturais</div>
-            <div class="badge">Suplemento alimentar</div>
-            <div class="badge">Para homens com rotina intensa</div>
-            <div class="badge">Complemento de estilo de vida saudável</div>
+    <div class="headline">
+        The Natural Breakthrough Helping Men Fight ED — Without Injections or Risky Drugs
+        <div style="font-size:16px;font-weight:normal;margin-top:10px;opacity:0.9;">
+            Introducing <strong>ErectoGenX</strong>: an advanced, science‑inspired formula to support stronger, longer‑lasting
+            erections, boost blood flow and confidence in the bedroom.
         </div>
-    </header>
+    </div>
 
-    <section class="highlight">
-        <p>
-            ErectogenX foi desenvolvido para homens que buscam <strong>mais disposição</strong>, 
-            <strong>vitalidade diária</strong> e <strong>sensação de bem-estar</strong>. 
-            Um suplemento alimentar que apoia o seu estilo de vida ativo, sem promessas exageradas.
-        </p>
-    </section>
+    <div class="video-section">
+        <vturb-smartplayer id="vid-692c76fa4fd612d7bf34e326" style="display: block; margin: 0 auto; width: 100%; "></vturb-smartplayer> <script type="text/javascript"> var s=document.createElement("script"); s.src="https://scripts.converteai.net/c1f53d27-913d-4412-b319-9c4aada026f6/players/692c76fa4fd612d7bf34e326/v4/player.js", s.async=!0,document.head.appendChild(s); </script>
+    </div>
 
-    <section>
-        <h3>Por que ErectogenX?</h3>
-        <p>
-            Em uma rotina corrida, manter energia e foco pode ser um desafio. 
-            ErectogenX reúne ingredientes selecionados para apoiar:
-        </p>
-        <ul>
-            <li><strong>Energia e disposição</strong> ao longo do dia</li>
-            <li><strong>Vitalidade geral</strong> e sensação de vigor</li>
-            <li><strong>Bem-estar</strong> físico e mental</li>
-            <li><strong>Rotina ativa</strong>, exercícios e produtividade</li>
-        </ul>
-    </section>
+    <div id="discountSection" style="display:none;">
+        <script>
+            // Show discount section after 30 seconds
+            window.addEventListener('load', function () {
+                setTimeout(function () {
+                    var discountSection = document.getElementById('discountSection');
+                    if (discountSection) {
+                        discountSection.style.display = 'block';
+                    }
+                }, 30000); // 30,000 ms = 30 seconds
+            });
+        </script>
+        <section id="order-section" class="bb-section">
 
-    <section>
-        <h3>Fórmula com ingredientes naturais selecionados</h3>
-        <div class="grid">
-            <div class="card">
-                <h4>Complexo de extratos vegetais</h4>
-                <p>
-                    Ingredientes tradicionalmente utilizados para apoiar a
-                    <strong>vitalidade</strong> e a <strong>disposição</strong>, 
-                    integrando-se à sua rotina de forma prática.
-                </p>
+            <!-- Steps -->
+            <div class="bb-steps">
+                <span class="bb-step bb-step--active">STEP 1</span>
+                <span class="bb-step">STEP 2</span>
+                <span class="bb-step">STEP 3</span>
             </div>
-            <div class="card">
-                <h4>Suporte à energia e foco</h4>
-                <p>
-                    Nutrientes que podem colaborar com a sensação de 
-                    <strong>energia</strong> e <strong>concentração</strong>, ideais para dias intensos.
-                </p>
+
+            <!-- Título principal -->
+            <div class="bb-section-header">
+                <h3>STEP 1: CHOOSE YOUR DISCOUNTED ERECTOGENX PACKAGE</h3>
+                <div class="bb-divider"></div>
             </div>
-            <div class="card">
-                <h4>Estilo de vida ativo</h4>
-                <p>
-                    Indicado para homens que desejam complementar hábitos saudáveis,
-                    como alimentação equilibrada e prática de exercícios físicos.
-                </p>
+
+            <!-- Cards de ofertas -->
+            <div class="bb-packages">
+                <!-- 6 bottles (3 + 3 grátis) -->
+                <article class="bb-card bb-card--best">
+                    <div class="bb-card-tag">BEST VALUE</div>
+                    <div class="bb-card-body">
+                        <div class="bb-card-left">
+                            <h4>3 Bottles + 3 Free</h4>
+                            <p class="bb-supply">180‑Day ErectoGenX Supply</p>
+                            <img src="assets/biocalm-6bottles.webp" alt="6 bottles of ErectoGenX" class="bb-product-img">
+                        </div>
+                        <div class="bb-card-right">
+                            <div class="bb-price-per-bottle">
+                                <span class="bb-price">$98</span>
+                                <span class="bb-price-label">for every 2 bottles</span>
+                            </div>
+                            <p class="bb-save bb-save--highlight">YOU SAVE $664</p>
+                            <p class="bb-label">BIGGEST DISCOUNT</p>
+                            <p class="bb-label bb-label--accent">180‑DAY MONEY‑BACK GUARANTEE</p>
+                            <img src="assets/cards2.png" alt="cards" class="bb-cards-img">
+                            <p class="bb-total">
+                                Total:
+                                <span class="bb-total-old">$948</span>
+                                <span class="bb-total-new">$294</span>
+                            </p>
+                            <p class="bb-shipping bb-shipping--free">+ FREE SHIPPING</p>
+                        </div>
+                    </div>
+                    <a href="https://biopeak.mycartpanda.com/checkout/192542976:1?afid=QiA8qIICeR"
+                        class="bb-btn bb-btn--primary">
+                        <span>BUY NOW</span>
+                    </a>
+                </article>
+
+                <!-- 3 bottles (2 + 1 grátis) -->
+                <article class="bb-card">
+                    <div class="bb-card-tag">3‑BOTTLE BUNDLE</div>
+                    <div class="bb-card-body">
+                        <div class="bb-card-left">
+                            <h4>2 Bottles + 1 Free</h4>
+                            <p class="bb-supply">90‑Day ErectoGenX Supply</p>
+                            <img src="assets/biocalm-3bottles.webp" alt="3 bottles of ErectoGenX" class="bb-product-img">
+                        </div>
+                        <div class="bb-card-right">
+                            <div class="bb-price-per-bottle">
+                                <span class="bb-price">$207</span>
+                                <span class="bb-price-label">per kit</span>
+                            </div>
+                            <p class="bb-save">YOU SAVE $277</p>
+                            <p class="bb-label">180‑DAY GUARANTEE</p>
+                            <img src="assets/cards3.png" alt="cards" class="bb-cards-img">
+                            <p class="bb-total">
+                                Total:
+                                <span class="bb-total-old">$474</span>
+                                <span class="bb-total-new">$207</span>
+                            </p>
+                            <p class="bb-shipping bb-shipping--free">+ FREE SHIPPING</p>
+                        </div>
+                    </div>
+                    <a href="https://biopeak.mycartpanda.com/checkout/188969853:1?afid=QiA8qIICeR" class="bb-btn">
+                        <span>BUY NOW</span>
+                    </a>
+                </article>
+
+                <!-- 2 bottles -->
+                <article class="bb-card">
+                    <div class="bb-card-tag">2‑BOTTLE STARTER</div>
+                    <div class="bb-card-body">
+                        <div class="bb-card-left">
+                            <h4>2 Bottles</h4>
+                            <p class="bb-supply">60‑Day ErectoGenX Supply</p>
+                            <img src="assets/biocalm-2bottles.webp" alt="2 bottles of ErectoGenX" class="bb-product-img">
+                        </div>
+                        <div class="bb-card-right">
+                            <div class="bb-price-per-bottle">
+                                <span class="bb-price">$79</span>
+                                <span class="bb-price-label">per kit</span>
+                            </div>
+                            <p class="bb-save">YOU SAVE $158</p>
+                            <p class="bb-label">180‑DAY GUARANTEE</p>
+                            <img src="assets/cards3.png" alt="cards" class="bb-cards-img">
+                            <p class="bb-total">
+                                Total:
+                                <span class="bb-total-old">$316</span>
+                                <span class="bb-total-new">$88.90</span>
+                            </p>
+                            <p class="bb-shipping">+ $9.90 SHIPPING</p>
+                        </div>
+                    </div>
+                    <a href="https://biopeak.mycartpanda.com/checkout/188969852:1?afid=QiA8qIICeR" class="bb-btn">
+                        <span>BUY NOW</span>
+                    </a>
+                </article>
+            </div>
+
+            <!-- Garantia -->
+            <div class="bb-guarantee">
+                <img src="assets/SxGDbb3613036.webp" alt="Guarantee badge" class="bb-guarantee-img">
+                <div class="bb-guarantee-text">
+                    <h3>100% SATISFACTION GUARANTEED</h3>
+                    <p>
+                        Your ErectoGenX order today is fully protected by our 100% money‑back guarantee for a full
+                        180 days. Try it, feel the difference in your performance and confidence in the bedroom, and if
+                        you are not impressed, simply contact us and we will refund every single penny.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="comments-section">
+        <h3>Comments</h3>
+
+        <div class="fb-comment">
+            <img class="fb-avatar" src="https://i.pravatar.cc/50?img=12" alt="avatar">
+            <div>
+                <div class="fb-name">Daniel Harris</div>
+                <div class="fb-text">I was skeptical, but after a few weeks on ErectoGenX my erections were harder and
+                    I could finally keep them long enough to satisfy my wife again.</div>
+                <div class="fb-actions">
+                    <span>👍 Like</span><span>💬 Reply</span><span>2h</span>
+                </div>
             </div>
         </div>
-        <!-- 
-            IMPORTANTE: aqui, no lugar desses textos genéricos,
-            você pode listar os INGREDIENTES reais da fórmula,
-            sem alegações de cura/tratamento e sem citar disfunção específica.
-        -->
-    </section>
 
-    <section>
-        <h3>Para quem é ErectogenX?</h3>
-        <ul>
-            <li>Homens que buscam <strong>mais vitalidade</strong> no dia a dia</li>
-            <li>Quem sente a rotina mais pesada e quer <strong>mais disposição</strong></li>
-            <li>Quem deseja apoiar o <strong>bem-estar geral</strong> com um suplemento</li>
-            <li>Homens que prezam por <strong>autocuidado</strong> e qualidade de vida</li>
-        </ul>
-    </section>
-
-    <section>
-        <h3>Como usar</h3>
-        <p>
-            Recomenda-se o consumo de <strong>1 a 2 cápsulas ao dia</strong>, 
-            preferencialmente junto com alguma refeição, ou conforme orientação de profissional de saúde.
-        </p>
-    </section>
-
-    <section>
-        <h3>Qualidade e segurança</h3>
-        <div class="grid">
-            <div class="card">
-                <h4>Produção responsável</h4>
-                <p>
-                    Produzido em instalações com rigor de qualidade, seguindo boas práticas de fabricação.
-                </p>
-            </div>
-            <div class="card">
-                <h4>Sem promessas irreais</h4>
-                <p>
-                    ErectogenX é um <strong>suplemento alimentar</strong>, 
-                    e não um medicamento. Não promete resultados milagrosos.
-                </p>
-            </div>
-            <div class="card">
-                <h4>Complemento, não substituto</h4>
-                <p>
-                    O uso deve estar associado a um estilo de vida saudável, 
-                    incluindo alimentação balanceada e atividade física.
-                </p>
+        <div class="fb-comment">
+            <img class="fb-avatar" src="https://i.pravatar.cc/50?img=32" alt="avatar">
+            <div>
+                <div class="fb-name">James Peterson</div>
+                <div class="fb-text">ErectoGenX helped me feel like myself again. No more avoiding intimacy or making
+                    excuses – I have real confidence in the bedroom now.</div>
+                <div class="fb-actions">
+                    <span>👍 Like</span><span>💬 Reply</span><span>1h</span>
+                </div>
             </div>
         </div>
-    </section>
 
-    <section>
-        <h3>Relatos de consumidores</h3>
-        <div class="card">
-            <p class="testimonial">
-                "Depois de incluir ErectogenX na rotina, senti mais disposição para encarar o dia."
-                <span>— Carlos M.</span>
-            </p>
-            <p class="testimonial">
-                "Percebi melhora na vitalidade, mesmo em semanas mais puxadas de trabalho."
-                <span>— Roberto L.</span>
-            </p>
-            <!-- 
-                DICA: Evite qualquer depoimento mencionando desempenho sexual,
-                ereção, "problemas de cama", etc. Foque em energia, bem-estar, vitalidade.
-            -->
+        <div class="fb-comment">
+            <img class="fb-avatar" src="https://i.pravatar.cc/50?img=45" alt="avatar">
+            <div>
+                <div class="fb-name">Michael Lewis</div>
+                <div class="fb-text">The difference in blood flow and stamina is obvious. I last longer, and my
+                    partner actually commented on how much more present and confident I seem.</div>
+                <div class="fb-actions">
+                    <span>👍 Like</span><span>💬 Reply</span><span>4h</span>
+                </div>
+            </div>
         </div>
-    </section>
 
-    <section class="cta-box">
-        <h3>Sinta-se no seu melhor todos os dias</h3>
-        <p>
-            Se você busca dar um passo a mais na sua rotina de autocuidado e bem-estar,
-            ErectogenX pode ser o aliado ideal para apoiar sua vitalidade.
-        </p>
-        <a href="#comprar" class="cta-button">QUERO ERECTOGENX</a>
-        <!-- Altere o href para o link real de checkout -->
-    </section>
+        <div class="fb-comment">
+            <img class="fb-avatar" src="https://i.pravatar.cc/50?img=24" alt="avatar">
+            <div>
+                <div class="fb-name">Robert Miller</div>
+                <div class="fb-text">Finally something that actually helped with my ED without side effects. Stronger
+                    erections, better performance, and I feel years younger.</div>
+                <div class="fb-actions">
+                    <span>👍 Like</span><span>💬 Reply</span><span>3h</span>
+                </div>
+            </div>
+        </div>
 
-    <section class="disclaimer">
-        <p>
-            <strong>Aviso importante:</strong><br>
-            • ErectogenX é um <strong>suplemento alimentar</strong> e não deve ser utilizado como substituto de
-            uma alimentação equilibrada e um estilo de vida saudável.<br>
-            • Este produto <strong>não é medicamento</strong> e não se destina a diagnosticar, tratar, curar
-            ou prevenir doenças.<br>
-            • Em caso de dúvidas, procure orientação de um profissional de saúde.<br>
-            • Resultados podem variar de pessoa para pessoa.
-        </p>
-    </section>
-</div>
+    </div>
+
 </body>
+
 </html>
